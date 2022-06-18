@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*------General----------*/
+.container {
+    display: flex; 
+}
+#todaysPicks {
+    flex: 4;
+    padding: 15px;   
+}
+#mostRecent{
+    flex: 1;
+    padding: 15px;  
+}
+.innerContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.leftBox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+}
+.mainBox{
+    flex: 3;
+    padding: 15px;
+}
+.leftBox__article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.title{
+    border-top: 3px solid black;
+}
+.title_text{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+/*---------------------Detalles--------------------*/
+.mainBox img {
+    width: 100%;
+}
+.topLine {
+    text-transform: uppercase;
+}
+.mainBox h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.mainBox p.author{
+    text-transform: uppercase;
+}
+.author{
+    text-transform: uppercase;
+}
+article{
+    display: flex;
+}
+.mostRecent__article{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    height: 130px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+.mostRecent__article div{
+    flex: 3;
+}
+.mostRecent-image{
+    width: 80px;
+    height: 80px;
+}
